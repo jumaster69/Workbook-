@@ -1,8 +1,8 @@
-# 📚 Workbook - Integración de APIs
+# Workbook - Integración de APIs
 
 **Proyecto Politécnico Gran Colombiano**
 
-## 👥 Integrantes del Equipo
+## Integrantes del Equipo
 - Carolina
 - Brayan
 - Jennifer Viviana Samper Torbello
@@ -11,27 +11,27 @@
 
 ---
 
-## 📖 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este proyecto integra dos APIs públicas populares:
 
 1. **DummyJSON** - API de productos con categorías, búsqueda y detalles
 2. **FakeStore API** - API de tienda con productos, carrito y usuarios
 
-## 🎯 Objetivos
+## Objetivos
 
-✅ Consumir datos de ambas APIs  
-✅ Procesar y transformar información  
-✅ Crear ejemplos prácticos de integración  
-✅ Documentar patrones de uso  
+- Consumir datos de ambas APIs  
+- Procesar y transformar información  
+- Crear ejemplos prácticos de integración  
+- Documentar patrones de uso  
 
-## 🚀 Tecnologías
+## Tecnologías
 
 - **Node.js** - Runtime de JavaScript
 - **Axios** - Cliente HTTP para peticiones
 - **JSON** - Formato de datos
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 .
@@ -45,7 +45,7 @@ Este proyecto integra dos APIs públicas populares:
 └── .env.example          # Variables de entorno (ejemplo)
 ```
 
-## 🔗 APIs Utilizadas
+## APIs Utilizadas
 
 ### DummyJSON
 - **URL Base**: https://dummyjson.com
@@ -58,7 +58,7 @@ Este proyecto integra dos APIs públicas populares:
 
 ---
 
-## 📖 Ver Documentación Completa
+## Ver Documentación Completa
 
 Para más detalles, consulta [WORKBOOK.md](./WORKBOOK.md)
 
