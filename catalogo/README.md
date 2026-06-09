@@ -1,14 +1,16 @@
 # ClickTecnology - Módulo de Artículos y Características (Vitrina / Catálogo)
 
-Proyecto Politécnico Gran Colombiano
+**Proyecto Politécnico Gran Colombiano**
 
-Integrantes del Equipo
-Carolina Sotelo Huertas
-Brayan
-Jennifer Viviana Samper Torbello
-Juan Angel Torres Florez
-Jorge Torres
-Daniel Torres
+## Integrantes del Equipo
+- Carolina Sotelo Huertas
+- Brayan
+- Jennifer Viviana Samper Torbello
+- Juan Angel Torres Florez
+- Jorge Torres
+- Daniel Torres
+
+---
 
 
 Este proyecto implementa el **módulo de artículos y características** de la tienda
