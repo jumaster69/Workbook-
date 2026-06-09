@@ -70,5 +70,3 @@ El presente documento constituye el registro oficial, cronológico y cuantitativ
 [cite_start]**Total General de Esfuerzo Devengado**: **5,520 minutos / 92.0 Horas Netas de Ingeniería**.
 
 ---
-**Métrica de Calidad del Log**: 100% de consistencia cruzada con las pestañas `SUMS` y `TASK`.  
-**Aprobado para informe PDF**: Jorge David Torres Muñoz (Planning Manager).
