@@ -1,312 +1,131 @@
-# TASK - Lista de Tareas del Proyecto
+# TASK - Lista de Tareas y Planificación Detallada del Proyecto
 
-**Proyecto Politécnico Gran Colombiano**
+**Proyecto Politécnico Grancolombiano**
 
-## Integrantes del Equipo
-- Carolina Sotelo Huertas
-- Brayan
-- Jennifer Viviana Samper Torbello
-- Juan Angel Torres Florez
-- Jorge Torres
-- Daniel Torres
----
-
-## Tareas por Completar
-
-### Fase 1: Planificación y Setup
-
-**Estado**: 70% completado
-
-- [x] Crear repositorio GitHub
-- [x] Definir estructura del proyecto
-- [x] Crear documentación base (README, WORKBOOK)
-- [x] Configurar package.json
-- [x] Crear archivo TSP.md
-- [x] Crear archivo LOG.md
-- [x] Crear archivo LOGD.md
-- [ ] Crear archivo .env.example
-- [ ] Configurar .gitignore final
-
-**Responsable**: Juan Angel Torres Florez
-**Plazo**: 10/06/2026
-**Progreso**: 7 de 9 tareas completadas
+## Estructura de Subgrupo (6 Integrantes Activos)
+- **Brayan Antonio Torres** — Líder de Proyecto (Team Leader)
+- **Jorge David Torres Muñoz** — Responsable de Planificación y Tiempos (Planning Manager)
+- **Carolina Sotelo Huertas** — Responsable de Calidad y Estética Visual (Quality Manager)
+- **Juan Angel Torres Florez** — Responsable de Soporte, Versiones y Estimaciones (Support Manager)
+- **Daniel Torres** — Responsable de Pruebas Automatizadas y Riesgos (Test Manager)
+- **Jennifer Viviana Samper Torbello** — Responsable de Arquitectura y Flujos (Process Manager)
 
 ---
 
-### Fase 2: Desarrollo de Módulos
+## Planificación de Tareas por Componente Técnico (Granularidad TSP)
 
-**Estado**: 10% completado
+### Fase 1: Planificación, Setup y Línea Base
+**Estado**: 100% Completado  
+**Coordinador**: Brayan Antonio Torres
 
-#### Módulo DummyJSON
-
-- [ ] Implementar función getAllProducts()
-- [ ] Implementar función getProductsByCategory()
-- [ ] Implementar función searchProducts()
-- [ ] Implementar función getProductDetails()
-- [ ] Implementar función getUsers()
-- [ ] Implementar función getPosts()
-- [ ] Agregar manejo de errores robusto
-- [ ] Agregar validaciones de entrada
-- [ ] Crear tests unitarios
-- [ ] Documentar cada función
-
-**Responsable**: Carolina
-**Plazo**: 18/06/2026
-**Progreso**: 0 de 10 tareas completadas
-**Prioridad**: Alta
-
-#### Módulo FakeStore API
-
-- [ ] Implementar función getFakeStoreProducts()
-- [ ] Implementar función getFakeStoreByCategory()
-- [ ] Implementar función getFakeStoreCategories()
-- [ ] Implementar función getUserCart()
-- [ ] Implementar función getUserData()
-- [ ] Agregar manejo de errores robusto
-- [ ] Agregar validaciones de entrada
-- [ ] Crear tests unitarios
-- [ ] Documentar cada función
-- [ ] Optimizar performance
-
-**Responsable**: Brayan
-**Plazo**: 18/06/2026
-**Progreso**: 0 de 10 tareas completadas
-**Prioridad**: Alta
+- [x] **TSK1-01** Crear repositorio organizacional en GitHub Web | *Responsable: Juan Angel Torres*
+- [x] **TSK1-02** Estructurar entorno base de la aplicación y package.json | *Responsable: Juan Angel Torres*
+- [x] **TSK1-03** Configurar variables de entorno y archivo .env.example | *Responsable: Juan Angel Torres*
+- [x] **TSK1-04** Diseñar el Acta de Lanzamiento 1 y 2 (Línea base evolutiva) | *Responsable: Brayan Antonio*
+- [x] **TSK1-05** Rebalancear el Workbook (SUMS) al 16.6% por integrante | *Responsable: Jorge David*
 
 ---
 
-### Fase 3: Integración de Módulos
+### Fase 2: Desarrollo y Congelación de Módulos Core
+**Estado**: 35% Completado  
 
-**Estado**: 0% completado
+#### ÍTEM 1: Módulo de Compra Directa y Pasarela Simulada (Lanzamiento Temprano)
+- [x] **TSK2-01.1** Diseño de la interfaz de pasarela y componentes reactivos | *Responsable: Jorge David*
+- [x] **TSK2-01.2** Configuración de enrutamiento dinámico Angular `/compra/:id` | *Responsable: Jorge David*
+- [x] **TSK2-01.3** Implementación lógica de captura de tarjetas y simulación HTTP | *Responsable: Jorge David*
+- [x] **TSK2-01.4** Inspección de código cruzada (Code Review) de pasarela | *Responsable: Jorge David*
+- [x] **TSK2-01.5** Programación de pruebas unitarias aisladas de flujo transaccional | *Responsable: Jorge David*
+*Nota: Componente congelado al 100% de manera anticipada para estabilizar la arquitectura.*
 
-- [ ] Crear archivo index.js principal
-- [ ] Combinar módulos de ambas APIs
-- [ ] Crear función de comparación de precios
-- [ ] Crear función de estadísticas generales
-- [ ] Crear función de filtrado avanzado
-- [ ] Implementar caché de datos (5 minutos)
-- [ ] Implementar paginación
-- [ ] Crear función de búsqueda combinada
-- [ ] Validar integración de módulos
-- [ ] Documentar funciones integradas
+#### ÍTEM 2: Módulo de Autenticación, Registro y Seguridad
+- [ ] **TSK2-02.1** Maquetación responsiva de formularios de Login y Registro | *Responsable: Brayan Antonio*
+- [ ] **TSK2-02.2** Implementación de validators reactivos (Email y longitud) | *Responsable: Brayan Antonio*
+- [ ] **TSK2-02.3** Configuración de Angular Guards para la protección de rutas | *Responsable: Brayan Antonio*
+- [ ] **TSK2-02.4** Code Review enfocado en seguridad de formularios del cliente | *Responsable: Brayan Antonio*
 
-**Responsable**: Brayan, Carolina
-**Plazo**: 22/06/2026
-**Progreso**: 0 de 10 tareas completadas
-**Prioridad**: Alta
+#### ÍTEM 3: Consumo e Integración de la API DummyJSON
+- [ ] **TSK2-03.1** Desarrollar servicios inyectables para getAllProducts() | *Responsable: Carolina Sotelo*
+- [ ] **TSK2-03.2** Implementar lógica de mapeo para getProductsByCategory() | *Responsable: Carolina Sotelo*
+- [ ] **TSK2-03.3** Programar el motor de búsqueda indexada searchProducts() | *Responsable: Carolina Sotelo*
+- [ ] **TSK2-03.4** Manejo de excepciones y códigos de error HTTP de la API externa | *Responsable: Carolina Sotelo*
 
----
-
-### Fase 4: Testing y QA
-
-**Estado**: 0% completado
-
-#### Testing Unitario
-
-- [ ] Crear suite de pruebas para DummyJSON
-- [ ] Crear suite de pruebas para FakeStore
-- [ ] Testing de manejo de errores
-- [ ] Testing de validaciones de entrada
-- [ ] Validar respuestas de API
-- [ ] Alcanzar cobertura minima de 80%
-
-**Responsable**: Jorge Torres
-**Plazo**: 24/06/2026
-**Progreso**: 0 de 6 tareas completadas
-**Prioridad**: Alta
-
-#### Testing de Integración
-
-- [ ] Testing de combinación de módulos
-- [ ] Testing de funciones integradas
-- [ ] Testing de límites de API
-- [ ] Testing de casos extremos
-- [ ] Validar tiempo de respuesta
-- [ ] Documentar resultados
-
-**Responsable**: Jorge Torres
-**Plazo**: 26/06/2026
-**Progreso**: 0 de 6 tareas completadas
-**Prioridad**: Media
+#### ÍTEM 4: Consumo e Integración de la API FakeStore
+- [ ] **TSK2-04.1** Implementar funciones asíncronas para getFakeStoreProducts() | *Responsable: Jennifer Viviana*
+- [ ] **TSK2-04.2** Diseñar filtros avanzados de ordenamiento por categorías | *Responsable: Jennifer Viviana*
+- [ ] **TSK2-04.3** Estructurar lógica de captura de usuarios y carritos externos | *Responsable: Jennifer Viviana*
+- [ ] **TSK2-04.4** Configurar interceptores HTTP para auditoría de latencia de API | *Responsable: Jennifer Viviana*
 
 ---
 
-### Fase 5: Documentación Final
+### Fase 3: Lógica de Persistencia y Middleware de Integración
+**Estado**: 0% Completado  
 
-**Estado**: 0% completado
+#### ÍTEM 5: Gestión y Persistencia del Carro de Compras Local
+- [ ] **TSK3-01** Definir el estado global del carrito (Interfaces y Props) | *Responsable: Juan Angel Torres*
+- [ ] **TSK3-02** Programar algoritmos de adición, remoción y cálculo de totales | *Responsable: Juan Angel Torres*
+- [ ] **TSK3-03** Sincronizar persistencia del estado utilizando localStorage | *Responsable: Juan Angel Torres*
+- [ ] **TSK3-04** Inspección técnica sobre el manejo de memoria en almacenamiento local | *Responsable: Juan Angel Torres*
 
-- [ ] Crear TASK.md (lista de tareas)
-- [ ] Crear SUMS.md (resumen del proyecto)
-- [ ] Crear SCHEDULE.md (cronograma detallado)
-- [ ] Documentar todas las funciones
-- [ ] Crear guía de uso del proyecto
-- [ ] Crear ejemplos de integración avanzados
-- [ ] Documentar casos de error y soluciones
-- [ ] Crear diagrama de arquitectura
-- [ ] Crear FAQ (Preguntas Frecuentes)
-- [ ] Revisar y validar documentación
-
-**Responsable**: Jennifer Viviana Samper Torbello
-**Plazo**: 28/06/2026
-**Progreso**: 1 de 10 tareas completadas (TASK.md en proceso)
-**Prioridad**: Media
+#### ÍTEM 6: Transformación, Comparación y Caché Combinada
+- [ ] **TSK3-05** Crear el módulo intermedio de unificación de respuestas de APIs | *Responsable: Jennifer Viviana*
+- [ ] **TSK3-06** Diseñar algoritmo de comparación analítica de precios cruzados | *Responsable: Jennifer Viviana*
+- [ ] **TSK3-07** Implementar middleware de caché local temporizado (5 minutos) | *Responsable: Jennifer Viviana*
 
 ---
 
-### Fase 6: Revisión y Cierre
+### Fase 4: Aseguramiento de Calidad, Inspección y Pruebas (QA)
+**Estado**: 0% Completado  
 
-**Estado**: 0% completado
+#### Control de Defectos y Pruebas Unitarias Automatizadas
+- [ ] **TSK4-01** Configurar el motor de ejecución automatizada Vitest en el proyecto | *Responsable: Daniel Torres*
+- [ ] **TSK4-02** Desarrollar la suite de pruebas unitarias para el componente DummyJSON | *Responsable: Daniel Torres*
+- [ ] **TSK4-03** Desarrollar la suite de pruebas unitarias para el componente FakeStore | *Responsable: Daniel Torres*
+- [ ] **TSK4-04** Validar la asertividad en el control de límites y excepciones de red | *Responsable: Daniel Torres*
+- [ ] **TSK4-05** Generar el reporte automatizado de cobertura (Meta: Mínimo 80%) | *Responsable: Daniel Torres*
 
-- [ ] Revisión de código completo
-- [ ] Validación de calidad general
-- [ ] Pruebas finales del sistema
-- [ ] Corrección de defectos críticos
-- [ ] Preparación para presentación
-- [ ] Documentación de lecciones aprendidas
-- [ ] Cierre oficial del proyecto
-- [ ] Presentación final al cliente
-
-**Responsable**: Equipo completo
-**Plazo**: 30/06/2026
-**Progreso**: 0 de 8 tareas completadas
-**Prioridad**: Alta
+#### Auditorías de Calidad de Proceso
+- [ ] **TSK4-06** Dirigir las sesiones formales de Code Review de integración de ramas | *Responsable: Carolina Sotelo*
+- [ ] **TSK4-07** Mantener la bitácora de inyección y remoción de errores (Pestaña LOGD) | *Responsable: Carolina Sotelo*
 
 ---
 
-## Tareas Críticas
+### Fase 5: Gobernanza TSP y Documentación Técnica Final
+**Estado**: 20% Completado  
 
-| ID | Descripción | Prioridad | Asignado | Plazo | Estado |
-|----|------------|-----------|----------|-------|--------|
-| TASK-001 | Implementar módulo DummyJSON | Crítica | Carolina | 18/06 | Pendiente |
-| TASK-002 | Implementar módulo FakeStore | Crítica | Brayan | 18/06 | Pendiente |
-| TASK-003 | Integración de módulos | Alta | Brayan, Carolina | 22/06 | Pendiente |
-| TASK-004 | Testing unitario | Alta | Jorge Torres | 24/06 | Pendiente |
-| TASK-005 | Documentación final | Media | Jennifer Viviana | 28/06 | Pendiente |
-| TASK-006 | Revisión y cierre | Alta | Equipo completo | 30/06 | Pendiente |
-
----
-
-## Detalles de Tareas Seleccionadas
-
-### TASK-001: Implementar módulo DummyJSON
-
-**Descripción**: Crear todas las funciones necesarias para consumir la API DummyJSON
-
-**Tareas incluidas**:
-1. getAllProducts() - Obtener todos los productos
-2. getProductsByCategory() - Filtrar por categoría
-3. searchProducts() - Búsqueda por palabras clave
-4. getProductDetails() - Detalles de un producto
-5. getUsers() - Obtener información de usuarios
-6. getPosts() - Obtener posts disponibles
-
-**Requisitos**:
-- Código documentado
-- Manejo de errores
-- Validaciones de entrada
-- Tests unitarios
-- Cumplimiento con estándares del proyecto
-
-**Criterios de aceptación**:
-- Todas las funciones funcionan correctamente
-- Manejo de errores implementado
-- 80% de cobertura de tests
-- Código revisado y aprobado
-
-**Bloqueadores**: Ninguno
-**Dependencias**: Configuración inicial completada
+- [x] **TSK5-01** Estructurar la pestaña TASK de planificación fina (Este documento) | *Responsable: Jorge David*
+- [ ] **TSK5-02** Consolidar la hoja SCHEDULE e hitos semanales del Workbook | *Responsable: Jorge David*
+- [ ] **TSK5-03** Elaborar los diagramas formales de arquitectura modular del software | *Responsable: Jennifer Viviana*
+- [ ] **TSK5-04** Redactar los estándares de codificación y guías de instalación | *Responsable: Jennifer Viviana*
+- [ ] **TSK5-05** Diseñar las matrices de riesgos y planes de contingencia (Acta 7) | *Responsable: Daniel Torres*
+- [ ] **TSK5-06** Integrar el reporte ejecutivo final de la Entrega 2 bajo formato APA 7 | *Responsable: Brayan Antonio*
 
 ---
 
-### TASK-002: Implementar módulo FakeStore
+## Estadísticas de Control de Tareas (Métricas Globales)
 
-**Descripción**: Crear todas las funciones necesarias para consumir la API FakeStore
-
-**Tareas incluidas**:
-1. getFakeStoreProducts() - Obtener todos los productos
-2. getFakeStoreByCategory() - Filtrar por categoría
-3. getFakeStoreCategories() - Obtener categorías
-4. getUserCart() - Obtener carrito de usuario
-5. getUserData() - Información de usuarios
-6. Funciones de utilidad
-
-**Requisitos**:
-- Código documentado
-- Manejo de errores
-- Validaciones de entrada
-- Tests unitarios
-- Performance optimizado
-
-**Criterios de aceptación**:
-- Todas las funciones funcionan correctamente
-- Tiempo de respuesta menor a 500ms
-- Manejo robusto de errores
-- 80% de cobertura de tests
-
-**Bloqueadores**: Ninguno
-**Dependencias**: Configuración inicial completada
+| Métrica TSP | Valor Planificado | Estado Actual |
+| :--- | :---: | :--- |
+| **Total de Tareas Granulares** | 33 | — |
+| **Tareas Completadas** | 11 | 🟢 33.3% Progreso |
+| **Tareas en Progreso** | 1 | 🟡 3.0% |
+| **Tareas Pendientes** | 21 | ⚪ 63.7% |
+| **Tareas con Responsable Único Asignado** | 33 | 🔒 100% Concurrencia Controlada |
 
 ---
 
-## Estadísticas Generales
+## Resumen de Asignación de Tareas por Participante
 
-| Métrica | Valor |
-|---------|-------|
-| Total de tareas | 73 |
-| Completadas | 7 |
-| En progreso | 1 |
-| Pendientes | 65 |
-| Porcentaje de completitud | 9.6% |
-| Tareas críticas | 6 |
-| Tareas de alta prioridad | 12 |
-| Tareas de media prioridad | 8 |
-
----
-
-## Distribución de Tareas por Participante
-
-| Participante | Tareas Asignadas | Completadas | En Progreso | Pendientes |
-|-------------|-----------------|------------|------------|-----------|
-| Carolina | 10 | 0 | 0 | 10 |
-| Brayan | 10 | 0 | 0 | 10 |
-| Jorge Torres | 12 | 0 | 0 | 12 |
-| Jennifer Viviana Samper Torbello | 10 | 1 | 0 | 9 |
-| Juan Angel Torres Florez | 9 | 7 | 1 | 1 |
-| Equipo completo | 8 | 0 | 0 | 8 |
-| **Total** | **73** | **7** | **1** | **65** |
+| Rol Operativo TSP | Participante Responsable | Tareas Asignadas | Completadas | Pendientes |
+| :--- | :--- | :---: | :---: | :---: |
+| **Líder de Proyecto** | Brayan Antonio Torres | 5 | 1 | 4 |
+| **Planificación y Tiempos** | Jorge David Torres Muñoz | 6 | 6 | 0 |
+| **Gestión de Calidad** | Carolina Sotelo Huertas | 6 | 0 | 6 |
+| **Soporte y Versiones** | Juan Angel Torres Florez | 6 | 3 | 3 |
+| **Pruebas y Riesgos** | Daniel Torres | 5 | 0 | 5 |
+| **Arquitectura y Flujos** | Jennifer Viviana Samper Torbello | 5 | 1 | 4 |
+| **TOTALES** | **Subgrupo Completo** | **33** | **11** | **22** |
 
 ---
-
-## Dependencias entre Tareas
-
-1. Configuración inicial -> Desarrollo de módulos
-2. Desarrollo de módulos -> Integración
-3. Integración -> Testing
-4. Testing -> Documentación final
-5. Documentación final -> Revisión y cierre
-
----
-
-## Riesgos y Mitigación
-
-| Riesgo | Probabilidad | Impacto | Mitigación |
-|--------|------------|---------|-----------|
-| Retraso en desarrollo | Media | Alto | Asignar recursos adicionales |
-| Problemas de integración | Media | Medio | Testing continuo |
-| Defectos en producción | Baja | Alto | Revisar código |
-| Comunicación deficiente | Baja | Medio | Reuniones regulares |
-
----
-
-## Próximas Tareas Inmediatas
-
-1. Completar TASK.md, SUMS.md y SCHEDULE.md
-2. Iniciar desarrollo del módulo DummyJSON
-3. Iniciar desarrollo del módulo FakeStore
-4. Configurar ambiente de testing
-
----
-
-**Última actualización**: 08/06/2026 23:10
-**Próxima revisión**: 10/06/2026
-**Responsable**: Juan Angel Torres Florez
+**Última actualización**: 09/06/2026 13:43  
+**Auditor de Planificación**: Jorge David Torres Muñoz  
+**Estado de Línea Base**: Aprobado por el Subgrupo sin retrasos.
