@@ -106,10 +106,10 @@
 | Métrica TSP | Valor Planificado | Estado Actual |
 | :--- | :---: | :--- |
 | **Total de Tareas Granulares** | 33 | — |
-| **Tareas Completadas** | 11 | 🟢 33.3% Progreso |
-| **Tareas en Progreso** | 1 | 🟡 3.0% |
-| **Tareas Pendientes** | 21 | ⚪ 63.7% |
-| **Tareas con Responsable Único Asignado** | 33 | 🔒 100% Concurrencia Controlada |
+| **Tareas Completadas** | 11 |  33.3% Progreso |
+| **Tareas en Progreso** | 1 |  3.0% |
+| **Tareas Pendientes** | 21 |  63.7% |
+| **Tareas con Responsable Único Asignado** | 33 |  100% Concurrencia Controlada |
 
 ---
 
