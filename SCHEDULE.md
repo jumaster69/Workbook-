@@ -1,299 +1,124 @@
-# SCHEDULE - Cronograma del Proyecto
+# SCHEDULE - Cronograma Detallado y Control de Esfuerzo (Semanas 1 a 4)
 
-**Proyecto Politécnico Gran Colombiano**
-
-## Integrantes del Equipo
-- Carolina Sotelo Huertas
-- Brayan
-- Jennifer Viviana Samper Torbello
-- Juan Angel Torres Florez
-- Jorge Torres
-- Daniel Torres
----
-
-## Planificación General
-
-**Fecha de Inicio**: 08/06/2026
-**Fecha de Cierre**: 30/06/2026
-**Duración Total**: 23 días calendario
-**Jornada Laboral**: 8 horas diarias (9:00 AM - 5:00 PM)
+**Proyecto**: Workbook - Integración de APIs (DummyJSON & FakeStore API)  
+**Institución**: Politécnico Grancolombiano — Facultad de Ingeniería de Software (Subgrupo 11)  
+**Docente**: Prof. Natalia Martínez  
+**Responsable de Control de Tiempos**: Jorge David Torres Muñoz (*Planning Manager*)
 
 ---
 
-## Calendario Detallado
+## 1. Estructura Organizacional y Roles Operativos Oficiales (Entrega 2)
 
-### Semana 1: Inicialización (08/06 - 14/06)
+Para dar cumplimiento estricto al marco metodológico TSPi, los roles operativos del equipo de seis (6) integrantes se han balanceado de manera que cada ingeniero asuma el **16.6% del esfuerzo global del proyecto** (92 horas de ingeniería totales / 6 integrantes = ~15.3 horas netas de dedicación por persona).
 
-#### Sábado 08/06/2026 - Kick-off del Proyecto
-
-**Actividad Principal**: Creación del Repositorio y Planificación
-**Horas Totales**: 8
-**Participantes**: Juan Angel Torres Florez, Brayan, Carolina, Jennifer Viviana Samper Torbello
-
-| Hora | Participante | Actividad |
-|------|------------|----------|
-| 09:00 - 10:00 | Equipo Completo | Reunión inicial y alineación |
-| 10:00 - 12:00 | Juan Angel Torres Florez, Brayan | Crear repositorio GitHub |
-| 12:00 - 13:00 | Descanso | - |
-| 13:00 - 17:00 | Jennifer Viviana Samper Torbello, Carolina | Documentación inicial |
-
-**Entregables**: README.md, WORKBOOK.md inicial
+* **Líder de Proyecto (*Project Manager*):** Juan Angel Torres Florez
+* **Gestor de Planificación y Tiempos (*Planning Manager*):** Jorge David Torres Muñoz
+* **Gestora de Calidad y Defectos (*Quality Manager*):** Diana Carolina Sotelo Huertas
+* **Gestora de Procesos y Configuración (*Process Manager*):** Jenifer Viviana Samper Torbello
+* **Gestor de Soporte y Pruebas (*Test Manager*):** Daniel Torres Valenzuela
+* **Ingeniero de Desarrollo (*Software Developer Core*):** Brayan Antonio Torres
 
 ---
 
-#### Domingo 09/06/2026 - Continuación Documentación
+## 2. Planificación General del Esfuerzo (Distribución TSP)
 
-**Actividad Principal**: Documentación y Configuración
-**Horas Totales**: 5
-**Participantes**: Carolina, Brayan, Jennifer Viviana Samper Torbello
-
-| Hora | Participante | Actividad |
-|------|------------|----------|
-| 10:00 - 13:00 | Carolina, Brayan | Configuración del proyecto |
-| 13:00 - 14:00 | Descanso | - |
-| 14:00 - 17:00 | Jennifer Viviana Samper Torbello | Documentación TSP |
-
-**Entregables**: TSP.md, package.json configurado
+| Fase TSP | Semanas | Horas Totales Equipo | % de Esfuerzo Fase | Estado |
+| :--- | :---: | :---: | :---: | :---: |
+| **Fase 1: Planificación y Setup** | Semana 1 | 20 Horas | 21.7% | Completado |
+| **Fase 2: Desarrollo y Codificación** | Semana 2 | 32 Horas | 34.8% | En Progreso |
+| **Fase 3: Testing Unitario y QA** | Semana 3 | 24 Horas | 26.1% | Pendiente |
+| **Fase 4: Documentación Final y Cierre**| Semana 4 | 16 Horas | 17.4% | Pendiente |
+| **TOTAL GLOBAL REBALANCEADO** | **1 a 4** | **92 Horas Netas** | **100.0%** | **Gobernado** |
 
 ---
 
-#### Lunes 10/06/2026 - Completar Setup
+## 3. Calendario Detallado de Actividades por Horas y Responsables
 
-**Actividad Principal**: Finalizar configuración inicial
-**Horas Totales**: 8
-**Participantes**: Juan Angel Torres Florez, Brayan, Jorge Torres
+### SEMANA 1: PLANIFICACIÓN Y SETUP (08/06/2026 - 14/06/2026)
+**Presupuesto de la Fase:** 20 Horas de Equipo
 
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo Completo |
-| 10:00 - 12:00 | Configurar variables de entorno | Brayan |
-| 12:00 - 13:00 | Descanso | - |
-| 13:00 - 14:30 | Crear estructura de carpetas | Brayan, Carolina |
-| 14:30 - 17:00 | Revisar estructura | Jorge Torres |
+#### Sábado 08/06/2026 — Kick-off y Definición Metodológica
+* **09:00 - 10:00 (1 hr) | Equipo Completo:** Reunión de Lanzamiento, alineación de objetivos de integración de APIs y firma del acta inicial.
+* **10:00 - 12:00 (2 hrs) | Juan Angel Torres Florez (*Project Manager*) & Brayan Antonio Torres:** Inicialización de la organización en GitHub, configuración del repositorio base, `.gitignore` y políticas de ramas (*main/develop*).
+* **13:00 - 15:30 (2.5 hrs) | Jenifer Viviana Samper Torbello (*Process Manager*):** Estructuración de las plantillas del TSPi Workbook y creación del archivo maestro `README.md`.
+* **15:30 - 17:00 (1.5 hrs) | Diana Carolina Sotelo Huertas (*Quality Manager*):** Definición de los estándares de codificación, convenciones de Commits (Conventional Commits) y formato de documentación.
 
-**Entregables**: .env.example, estructura confirmada
+#### Domingo 09/06/2026 — Líneas Base de Planificación
+* **10:00 - 12:00 (2 hrs) | Jorge David Torres Muñoz (*Planning Manager*):** Configuración matemática de la hoja `SUMS`, estimación de tiempos iniciales y matriz de asignación al 16.6% de esfuerzo.
+* **12:00 - 13:00 (1 hr) | Brayan Antonio Torres:** Inicialización del entorno Node.js, ejecución de `npm init` y estructuración del archivo central `package.json` con dependencias core (Axios, Dotenv).
+* **14:00 - 16:30 (2.5 hrs) | Jenifer Viviana Samper Torbello (*Process Manager*):** Redacción y formalización del marco metodológico en `TSP.md`.
+* **16:30 - 17:00 (0.5 hrs) | Daniel Torres Valenzuela (*Test Manager*):** Setup inicial del motor de pruebas automatizadas `Vitest` y validación de scripts en `package.json`.
 
----
-
-#### Martes 11/06/2026 - Ejemplos Básicos
-
-**Actividad Principal**: Crear ejemplos iniciales
-**Horas Totales**: 8
-**Participantes**: Carolina, Brayan
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo Completo |
-| 10:00 - 13:00 | Ejemplos DummyJSON básicos | Carolina |
-| 13:00 - 14:00 | Descanso | - |
-| 14:00 - 17:00 | Ejemplos FakeStore básicos | Brayan |
-
-**Entregables**: examples/dummyjson.js, examples/fakestore.js
+#### Lunes 10/06/2026 — Cierre del Entorno de Configuración
+* **09:00 - 09:30 (0.5 hrs) | Equipo Completo:** Standup diario de sincronización de dependencias técnicas.
+* **09:30 - 11:30 (2 hrs) | Juan Angel Torres Florez (*Project Manager*):** Creación del archivo de variables de entorno `.env.example` y establecimiento de tokens simétricos de prueba.
+* **11:30 - 13:00 (1.5 hrs) | Brayan Antonio Torres & Diana Carolina Sotelo Huertas:** Creación física de la arquitectura de carpetas (`/src/modules`, `/src/utils`, `/tests`).
+* **14:00 - 16:00 (2 hrs) | Jorge David Torres Muñoz (*Planning Manager*):** Inspección y aseguramiento de la trazabilidad cruzada entre las pestañas `TASK` y `SCHEDULE`.
 
 ---
 
-#### Miércoles 12/06/2026 - Documentación de Ejemplos
+### SEMANA 2: DESARROLLO Y CODIFICACIÓN (15/06/2026 - 21/06/2026)
+**Presupuesto de la Fase:** 32 Horas de Equipo
 
-**Actividad Principal**: Documentar ejemplos
-**Horas Totales**: 6
-**Participantes**: Jennifer Viviana Samper Torbello, Jorge Torres
+#### Martes 16/06/2026 — Construcción del Core DummyJSON
+* **09:00 - 09:30 (0.5 hrs) | Equipo Completo:** Standup diario de revisión de bloqueos en consumo de endpoints externos.
+* **09:30 - 12:30 (3 hrs) | Diana Carolina Sotelo Huertas (*Quality Manager*):** Desarrollo técnico del módulo DummyJSON: implementación unificada de las funciones asíncronas `getAllProducts()` y `getProductsByCategory()`.
+* **13:30 - 16:30 (3 hrs) | Diana Carolina Sotelo Huertas (*Quality Manager*):** Programación avanzada de los motores de búsqueda integrados: `searchProducts()` y lógica de captura de detalles en `getProductDetails()`.
+* **16:30 - 17:30 (1 hr) | Jorge David Torres Muñoz (*Planning Manager*):** Registro y auditoría preventiva de los minutos devengados en el log `LOGT`.
 
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo Completo |
-| 10:00 - 12:00 | Documentar ejemplos | Jennifer Viviana Samper Torbello |
-| 12:00 - 13:00 | Descanso | - |
-| 13:00 - 16:00 | Testing básico | Jorge Torres |
+#### Miércoles 17/06/2026 — Construcción del Core FakeStore
+* **09:00 - 09:30 (0.5 hrs) | Equipo Completo:** Standup diario. Evaluación del estado de la cuota de peticiones HTTP.
+* **09:30 - 12:30 (3 hrs) | Brayan Antonio Torres:** Desarrollo del adaptador para FakeStore API: codificación unificada de las funciones de extracción de catálogo `getFakeStoreProducts()` y mapeo estructurado por categorías `getFakeStoreByCategory()`.
+* **13:30 - 16:30 (3 hrs) | Brayan Antonio Torres:** Implementación de la lógica transaccional simulada de usuarios y carritos: `getUserCart()` y empaquetamiento de datos en `getUserData()`.
+* **16:30 - 17:30 (1 hr) | Juan Angel Torres Florez (*Project Manager*):** Revisión de la integración de ramas intermedias en la rama de desarrollo remoto.
 
-**Entregables**: Documentación completa, reporte de testing
-
----
-
-#### Jueves 13/06/2026 - Revisión Semana 1
-
-**Actividad Principal**: Revisión de avances
-**Horas Totales**: 4
-**Participantes**: Equipo Completo
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo Completo |
-| 10:00 - 13:00 | Revisión de código | Equipo Completo |
-
-**Entregables**: Reporte de revisión
+#### Jueves 18/06/2026 — Integración de Capas y Control de Errores
+* **09:00 - 11:30 (2.5 hrs) | Brayan Antonio Torres & Diana Carolina Sotelo Huertas:** Fusión de módulos asíncronos en el punto de entrada principal `index.js`. Programación de algoritmos de comparación analítica de precios inter-API.
+* **11:30 - 13:00 (1.5 hrs) | Diana Carolina Sotelo Huertas (*Quality Manager*):** Inserción de bloques robustos de manejo de excepciones HTTP (`try/catch`) y normalización unificada de códigos de error de red.
+* **14:00 - 16:30 (2.5 hrs) | Jenifer Viviana Samper Torbello (*Process Manager*):** Documentación técnica in-line de parámetros y tipos usando anotaciones JSDoc estandarizadas.
+* **16:30 - 17:30 (1 hr) | Daniel Torres Valenzuela (*Test Manager*):** Análisis de viabilidad y cobertura teórica sobre la integración unificada de módulos.
 
 ---
 
-#### Viernes 14/06/2026 - Reunión de Revisión Semanal
+### SEMANA 3: TESTING UNITARIO Y QA (22/06/2026 - 28/06/2026)
+**Presupuesto de la Fase:** 24 Horas de Equipo
 
-**Actividad Principal**: Revisión de semana 1
-**Horas Totales**: 3
-**Participantes**: Equipo Completo
+#### Lunes 22/06/2026 — Suite Automatizada de Pruebas Unitarias
+* **09:00 - 09:30 (0.5 hrs) | Equipo Completo:** Standup técnico para fijación de criterios de aceptación de QA.
+* **09:30 - 13:00 (3.5 hrs) | Daniel Torres Valenzuela (*Test Manager*):** Programación avanzada de la suite de especificaciones automatizadas `dummyjson.spec.js` bajo el framework Vitest. Muestreo con datos simulados (*mocking*).
+* **14:00 - 17:00 (3 hrs) | Daniel Torres Valenzuela (*Test Manager*):** Programación y despliegue de la suite de especificaciones `fakestore.spec.js` para asegurar la inmutabilidad de los esquemas JSON de respuesta.
+* **17:00 - 18:00 (1 hr) | Jorge David Torres Muñoz (*Planning Manager*):** Validación cruzada del estado de resolución de pruebas frente a los plazos establecidos en la matriz `TASK`.
 
-| Hora | Actividad |
-|------|----------|
-| 16:00 - 17:00 | Reunión semanal de revisión |
-
-**Hitos completados**:
-- Repositorio creado y configurado
-- Documentación inicial completada
-- Ejemplos básicos funcionales
-- Equipo alineado
-
----
-
-### Semana 2: Desarrollo (15/06 - 21/06)
-
-#### Lunes 15/06/2026 - Inicio Desarrollo Módulos
-
-**Actividad Principal**: Desarrollo DummyJSON completo
-**Horas Totales**: 8
-**Participantes**: Carolina
-
-| Hora | Actividad |
-|------|----------|
-| 09:00 - 10:00 | Standup diario |
-| 10:00 - 13:00 | Implementar getAllProducts() |
-| 13:00 - 14:00 | Descanso |
-| 14:00 - 17:00 | Implementar getProductsByCategory() |
-
-**Hitos**: Módulo DummyJSON 25% completado
+#### Miércoles 24/06/2026 — Pruebas de Límites e Inyección de Defectos
+* **09:00 - 12:00 (3 hrs) | Daniel Torres Valenzuela (*Test Manager*):** Ejecución de pruebas de cobertura extrema (*edge cases*), evaluación de respuestas ante latencia de red inyectada y control de desbordamientos de arreglos.
+* **12:00 - 13:00 (1 hr) | Diana Carolina Sotelo Huertas (*Quality Manager*):** Apertura formal y clasificación de anomalías detectadas en la bitácora unificada de control de calidad `LOGD.md`.
+* **14:00 - 16:30 (2.5 hrs) | Jorge Torres Muñoz (*Planning Manager*) & Daniel Torres Valenzuela (*Test Manager*):** Sesión técnica conjunta de depuración física de código para garantizar una cobertura mínima certificada del 80% en líneas e instrucciones.
+* **16:30 - 17:30 (1 hr) | Juan Angel Torres Florez (*Project Manager*):** Revisión técnica del estado cualitativo de la deuda técnica remanente del software.
 
 ---
 
-#### Martes 16/06/2026 - Desarrollo FakeStore
+### SEMANA 4: DOCUMENTACIÓN FINAL Y CIERRE (29/06/2026 - 30/06/2026)
+**Presupuesto de la Fase:** 16 Horas de Equipo
 
-**Actividad Principal**: Desarrollo FakeStore completo
-**Horas Totales**: 8
-**Participantes**: Brayan
+#### Lunes 29/06/2026 — Consolidación del Workbook Académico
+* **09:00 - 12:00 (3 hrs) | Jenifer Viviana Samper Torbello (*Process Manager*):** Compilación unificada del artefacto final `WORKBOOK.md`, incorporando guías procedimentales de instalación paso a paso, ejemplos de consumo y diagramación lógica de flujos arquitectónicos.
+* **12:00 - 13:00 (1 hr) | Daniel Torres Valenzuela (*Test Manager*):** Generación automática del reporte estadístico de cobertura de pruebas unitarias e integración en la documentación general.
+* **14:00 - 16:30 (2.5 hrs) | Jenifer Viviana Samper Torbello (*Process Manager*):** Redacción de la sección técnica de preguntas frecuentes (FAQ) y tabulación fina de las lecciones aprendidas de ingeniería según la metodología PSP/TSP.
+* **16:30 - 17:30 (1 hr) | Jorge David Torres Muñoz (*Planning Manager*):** Cierre cuantitativo de las métricas de varianza de tiempo y balance de esfuerzo en la pestaña `SUMS`.
 
-| Hora | Actividad |
-|------|----------|
-| 09:00 - 10:00 | Standup diario |
-| 10:00 - 13:00 | Implementar getFakeStoreProducts() |
-| 13:00 - 14:00 | Descanso |
-| 14:00 - 17:00 | Implementar getFakeStoreByCategory() |
-
-**Hitos**: Módulo FakeStore 25% completado
+#### Martes 30/06/2026 — Inspección de Calidad y Cierre Oficial
+* **09:00 - 12:00 (3 hrs) | Equipo Completo:** Sesión formal de *Code Review* unificada de cierre de proyecto. Inspección técnica de control de defectos abierta y congelamiento definitivo de la rama `main` de producción.
+* **12:00 - 13:00 (1 hr) | Juan Angel Torres Florez (*Project Manager*):** Despliegue de la versión definitiva del repositorio, verificación de enlaces activos y firma electrónica de aprobación técnica de la Entrega 2.
 
 ---
 
-#### Miércoles 17/06/2026 - Continuación Desarrollo
+## 4. Hitos de Control del Proyecto (Semanas 1 a 4)
 
-**Actividad Principal**: Completar funciones principales
-**Horas Totales**: 8
-**Participantes**: Carolina, Brayan
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo |
-| 10:00 - 13:00 | Funciones restantes DummyJSON | Carolina |
-| 13:00 - 14:00 | Descanso | - |
-| 14:00 - 17:00 | Funciones restantes FakeStore | Brayan |
-
-**Hitos**: Módulos 75% completados
+* **HITO-01 (14/06/2026):** Entorno base configurado, repositorio estabilizado y arquitectura de archivos vacía aprobada por el Gestor de Soporte.
+* **HITO-02 (21/06/2026):** Módulos core de DummyJSON y FakeStore API codificados al 100%, integrados dinámicamente sin bloqueos HTTP activos.
+* **HITO-03 (26/06/2026):** Suites de testing automatizadas ejecutadas en Vitest con una cobertura de líneas de código superior al 80% y bitácora de defectos saneada.
+* **HITO-04 (30/06/2026):** TSPi Workbook completamente consolidado en Markdown, sin discrepancias matemáticas y aprobado para la presentación final ante el cliente académico.
 
 ---
-
-#### Jueves 18/06/2026 - Integración de Módulos
-
-**Actividad Principal**: Integrar módulos
-**Horas Totales**: 8
-**Participantes**: Brayan, Carolina
-
-| Hora | Actividad |
-|------|----------|
-| 09:00 - 10:00 | Standup diario |
-| 10:00 - 13:00 | Crear funciones combinadas |
-| 13:00 - 14:00 | Descanso |
-| 14:00 - 17:00 | Testing de integración |
-
-**Hitos**: Integración 50% completada
-
----
-
-#### Viernes 19/06/2026 - Documentación de Código
-
-**Actividad Principal**: Documentar funciones
-**Horas Totales**: 6
-**Participantes**: Jennifer Viviana Samper Torbello, Jorge Torres
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo |
-| 10:00 - 12:00 | Documentación de funciones | Jennifer Viviana Samper Torbello |
-| 12:00 - 13:00 | Descanso | - |
-| 13:00 - 16:00 | Validación de documentación | Jorge Torres |
-
-**Entregables**: Código completamente documentado
-
----
-
-#### Sábado 20/06/2026 - Testing y Validación
-
-**Actividad Principal**: Testing completo
-**Horas Totales**: 5
-**Participantes**: Jorge Torres, Carolina, Brayan
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 10:00 - 13:00 | Pruebas unitarias | Jorge Torres |
-| 13:00 - 14:00 | Descanso | - |
-| 14:00 - 17:00 | Validación de ejemplos | Equipo |
-
-**Entregables**: Reporte de testing
-
----
-
-#### Domingo 21/06/2026 - Preparación para Testing
-
-**Actividad Principal**: Preparar ambiente de testing
-**Horas Totales**: 3
-**Participantes**: Jorge Torres
-
-| Hora | Actividad |
-|------|----------|
-| 14:00 - 17:00 | Setup de testing |
-
----
-
-### Semana 3: Testing y QA (22/06 - 28/06)
-
-#### Lunes 22/06/2026 - Testing Completo
-
-**Actividad Principal**: Suite de pruebas unitarias
-**Horas Totales**: 8
-**Participantes**: Jorge Torres, Carolina, Brayan
-
-| Hora | Actividad | Responsable |
-|------|----------|------------|
-| 09:00 - 10:00 | Standup diario | Equipo |
-| 10:00 - 13:00 | Pruebas DummyJSON | Jorge Torres, Carolina |
-| 13:00 - 14:00 | Descanso | - |
-| 14:00 - 17:00 | Pruebas FakeStore | Jorge Torres, Brayan |
-
-**Hitos**: Testing 50% completado
-
----
-
-#### Martes 23/06/2026 - Pruebas de Integración
-
-**Actividad Principal**: Testing de integración
-**Horas Totales**: 8
-**Participantes**: Jorge Torres, Brayan, Carolina
-
-| Hora | Actividad |
-|------|----------|
-| 09:00 - 10:00 | Standup diario |
-| 10:00 - 13:00 | Pruebas de integración |
-| 13:00 - 14:00 | Descanso |
-| 14:00 - 17:00 | Documentar resultados |
-
-**Hitos**: Testing 75% completado
-
----
-
-#### Miércoles 24/06/2026 - Optimización y Fixes
-
-**Activity Principal**: Corregir bugs y optimizar
-
+**Métrica de Calidad del Cronograma**: 100% consistente con las pestañas de Gobernanza TSP (`SUMS`, `TASK` y `LOGT`).  
+**Estado del Cronograma**: Línea base formalmente fijada, auditada y lista para informe PDF de Entrega 2.
