@@ -3,7 +3,7 @@
 **Proyecto Politécnico Gran Colombiano**
 
 ## Integrantes del Equipo
-- Carolina
+- Carolina Sotelo Huertas
 - Brayan
 - Jennifer Viviana Samper Torbello
 - Juan Angel Torres Florez
