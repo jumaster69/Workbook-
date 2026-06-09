@@ -8,7 +8,7 @@
 - Jennifer Viviana Samper Torbello
 - Juan Angel Torres Florez
 - Jorge Torres
-- Daniel Torres
+- Daniel Torres Valenzuela
 
 ---
 
@@ -32,6 +32,7 @@
 | 09/06/2026 | Ejemplos básicos DummyJSON | Carolina | En progreso | Funciones principales iniciadas |
 | 09/06/2026 | Configuración de variables de entorno | Brayan | Completado | Archivo .env.example creado |
 | 09/06/2026 | Documentación de endpoints | Jennifer Viviana Samper Torbello | Completado | Tablas de referencia agregadas |
+| 09/06/2026 | Configuración de Vitest y ambiente de testing | Daniel Torres Valenzuela | En progreso | Dependencias instaladas y configuración inicial |
 | 10/06/2026 | Ejemplos básicos FakeStore API | Brayan | En progreso | Funciones principales iniciadas |
 | 10/06/2026 | Revisión de código inicial | Jorge Torres | Completado | Validación de estructura |
 
@@ -43,14 +44,18 @@
 | 15/06/2026 | Desarrollo de módulo FakeStore completo | Brayan | Pendiente | Plazo 15/06/2026 |
 | 20/06/2026 | Testing unitario | Jorge Torres | Pendiente | Plazo 20/06/2026 |
 | 20/06/2026 | Documentación de código | Jennifer Viviana Samper Torbello | Pendiente | Comentarios y guías finales |
+| 23/06/2026 | Creación de specs para funciones DummyJSON | Daniel Torres Valenzuela | Pendiente | Plazo 23/06/2026 |
+| 24/06/2026 | Creación de specs para funciones FakeStore | Daniel Torres Valenzuela | Pendiente | Plazo 24/06/2026 |
+| 25/06/2026 | Testing y validación con Vitest | Daniel Torres Valenzuela | Pendiente | Plazo 25/06/2026 |
 
 ### Semana 4 - Cierre y Entrega
 
 | Fecha | Actividad | Responsable | Estado | Notas |
 |-------|-----------|-------------|--------|-------|
 | 25/06/2026 | Revisión final del código | Equipo completo | Pendiente | Code review completo |
-| 25/06/2026 | Testing de integración | Jorge Torres | Pendiente | Validación de todas las funciones |
-| 29/06/2026 | Documentación final | Jennifer Viviana Samper Torbello | Pendiente | Guía de usuario y FAQ |
+| 25/06/2026 | Testing de integración | Jorge Torres, Daniel Torres Valenzuela | Pendiente | Validación de todas las funciones |
+| 29/06/2026 | Documentación final de pruebas | Daniel Torres Valenzuela | Pendiente | Reporte de pruebas y cobertura |
+| 29/06/2026 | Documentación final general | Jennifer Viviana Samper Torbello | Pendiente | Guía de usuario y FAQ |
 | 30/06/2026 | Presentación del proyecto | Juan Angel Torres Florez | Pendiente | Demostración de funcionalidades |
 
 ---
@@ -87,16 +92,25 @@
 ### Jorge Torres
 - Revisión de código inicial
 - Validación de estructura del proyecto
-- Actividades totales completadas: 2
+- Responsable de testing unitario general
+- Actividades totales completadas: 3
+
+### Daniel Torres Valenzuela
+- Configuración de Vitest y ambiente de testing
+- Instalación de dependencias para testing
+- Configuración inicial de suite de specs
+- Encargado de testing con Vitest y specs
+- Actividades totales completadas: 1
+- Actividades en progreso: 1
 
 ---
 
 ## Estadísticas Generales
 
-- Total de actividades completadas: 17
-- Total de actividades en progreso: 2
-- Total de actividades pendientes: 11
-- Tasa de completitud: 57%
+- Total de actividades completadas: 19
+- Total de actividades en progreso: 3
+- Total de actividades pendientes: 12
+- Tasa de completitud: 56%
 
 ---
 
@@ -107,19 +121,43 @@
 3. Todos los participantes han contribuido activamente
 4. El cronograma se está cumpliendo según lo planificado
 5. Las comunicaciones son claras y coordinadas
+6. Daniel Torres Valenzuela se ha unido al equipo con responsabilidades en testing con Vitest y specs
+7. Se han agregado tareas específicas de testing automatizado con herramientas modernas
 
 ---
 
 ## Próximas Actividades
 
-- Continuación del desarrollo de módulos
+- Continuación del desarrollo de módulos DummyJSON y FakeStore
+- Configuración final de ambiente de testing con Vitest
 - Implementación de funciones avanzadas
-- Realización de tests unitarios
+- Creación de suite completa de specs
+- Realización de tests unitarios con Vitest
 - Optimización de código
 - Preparación de documentación final
 
 ---
 
-**Última actualización**: 08/06/2026 23:05  
-**Próxima revisión**: 09/06/2026 10:00  
+## Responsabilidades por Área
+
+### Desarrollo Frontend/Backend
+- Carolina Sotelo Huertas (DummyJSON)
+- Brayan (FakeStore API)
+
+### Testing
+- Jorge Torres (Testing unitario general)
+- Daniel Torres Valenzuela (Testing con Vitest y Specs)
+
+### Documentación
+- Jennifer Viviana Samper Torbello (Documentación general)
+- Daniel Torres Valenzuela (Documentación de pruebas)
+
+### Coordinación
+- Juan Angel Torres Florez (Coordinación general)
+
+---
+
+**Última actualización**: 09/06/2026
+**Próxima revisión**: 10/06/2026
 **Estado general del proyecto**: En progreso - Sin retrasos
+**Actualizado por**: Copilot
