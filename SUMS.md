@@ -3,13 +3,14 @@
 **Proyecto Politécnico Grancolombiano**
 
 ## Integrantes del Equipo y Distribución de Esfuerzo (TSP Línea Base 2)
-* **Carolina Sotelo Huertas** — Desarrollador 1 (Módulo DummyJSON & Testing) | **Esfuerzo: 16.6%**
-* **Brayan** — Desarrollador 2 (Módulo FakeStore & Optimización) | **Esfuerzo: 16.6%**
-* **Jennifer Viviana Samper Torbello** — Process Manager (Diseño Funcional & Reportes) | **Esfuerzo: 16.6%**
-* **Juan Angel Torres Florez** — Team Leader & Support (Soporte, Versiones & Dirección) | **Esfuerzo: 16.6%**
-* **Jorge Torres** — QA/Testing Manager (Aseguramiento de Calidad) | **Esfuerzo: 16.6%**
-* **Daniel Torres** — Test & Risk Manager (Automatización & Gestión de Riesgos) | **Esfuerzo: 16.6%**
+* **Juan Angel Torres Florez** — Responsable de Soporte, Versiones y Estimaciones | **Esfuerzo: 16.6%**
+* **Carolina Sotelo Huertas** — Responsable de Calidad y Estética Visual | **Esfuerzo: 16.6%**
+* **Brayan Antonio Torres** — Líder de Proyecto (Team Leader) | **Esfuerzo: 16.6%**
+* **Jennifer Viviana Samper Torbello** — Responsable de Arquitectura y Flujos de Datos | **Esfuerzo: 16.6%**
+* **Jorge David Torres Muñoz** — Responsable de Planificación y Tiempos (Planning Manager) | **Esfuerzo: 16.6%**
+* **Daniel Torres** — Responsable de Pruebas Automatizadas y Riesgos | **Esfuerzo: 16.6%**
 
+*Nota: La carga operativa global se encuentra balanceada de forma equitativa al 16.6% por integrante tras consolidar la estructura del subgrupo a 6 ingenieros activos.*
 
 ---
 
@@ -17,9 +18,9 @@
 
 | Aspecto | Descripción |
 | :--- | :--- |
-| **Nombre** | Workbook - Integración de APIs |
+| **Nombre** | Workbook - Integración de APIs y Catálogo Virtual |
 | **Repositorio** | https://github.com/jumaster69/Workbook- |
-| **Tipo** | Proyecto Educativo - Ingeniería de Software |
+| **Tipo** | Proyecto Educativo - Ingeniería de Software (TSP) |
 | **Institución** | Politécnico Grancolombiano |
 | **Fecha de Inicio** | 08/06/2026 |
 | **Fecha Estimada de Cierre** | 30/06/2026 |
@@ -31,26 +32,26 @@
 
 ## Estructura Organizacional y Distribución del Esfuerzo Cuantitativo
 
-### Matriz de Roles y Responsabilidades Técnicas
+### Matriz de Roles y Responsabilidades Técnicas (Acta de Lanzamiento 4)
 
 | Participante | Rol Operativo TSP | Responsabilidades Clave en el Ciclo |
 | :--- | :--- | :--- |
-| **Juan Angel Torres** | Team Leader & Support | Dirección de sincronización, control de la estrategia de ramificación (Gitflow) y mantenimiento del Workbook (TASK/SCHEDULE). |
-| **Carolina Sotelo** | Desarrollador 1 | Construcción del bloque técnico de endpoints para DummyJSON, maquetación adaptativa y diseño de esquemas. |
-| **Brayan** | Desarrollador 2 | Construcción del bloque técnico para FakeStore API, algoritmos de consumo eficiente e integración modular. |
-| **Jennifer Viviana** | Process Manager | Estándares de codificación, documentación del ciclo de vida y recolección de métricas para informes de avance semanales. |
-| **Jorge Torres** | QA/Testing Manager | Coordinación de inspecciones de código cruzadas (Code Reviews) y administración de métricas de densidad de defectos. |
-| **Daniel Torres** | Test & Risk Manager | Configuración de suites de pruebas unitarias automatizadas e identificación temprana de matrices de riesgo técnico. |
+| **Juan Angel Torres** | Soporte y Versiones | Control de la estrategia de ramificación (Gitflow) en GitHub, administración de versiones y mantenimiento matemático de las hojas maestras (TASK y SCHEDULE). |
+| **Carolina Sotelo** | Gestión de Calidad | Auditoría cruzada de código (Code Reviews) en los Pull Requests para certificar la calidad antes de fusionar ramas y control del estándar visual. |
+| **Brayan Antonio** | Líder de Proyecto | Dirección de la sincronización grupal, coordinación de reuniones de lanzamiento y consolidación final del documento maestro bajo APA 7. |
+| **Jennifer Viviana** | Arquitectura de Datos | Configuración de servicios inyectables (@Injectable), lógica de datos estructurados e implementación del motor de búsqueda parametrizado. |
+| **Jorge David Torres** | Planificación y Tiempos | Custodio de la previsibilidad del cronograma. Diseño del plan detallado, estimación en horas, cálculo del valor ganado y auditoría semanal de la pestaña LOGT. |
+| **Daniel Torres** | Pruebas y Riesgos | Configuración del entorno automatizado de testing (Vitest), suites de pruebas unitarias (.spec.ts) y control estadístico de la hoja de defectos (LOGD). |
 
 ### Presupuesto de Horas Equitativo (Línea Base Corregida)
 
 Para cumplir con la disciplina métrica del proceso, el presupuesto total de **92 horas de ingeniería** del proyecto se divide en partes estrictamente iguales entre los 6 ingenieros activos:
 
-* [cite_start]**Total de Horas del Proyecto:** 92 horas globales[cite: 49].
+* **Total de Horas del Proyecto:** 92 horas globales.
 * **Carga de Trabajo Asignada por Ingeniero:** **15.3 horas netas** por integrante (`92 horas / 6 participantes = 15.33 hrs`).
 
 #### Distribución del Esfuerzo Grupal por Fases:
-* [cite_start]**Fase de Planificación Detallada:** 8 horas (8.7% del esfuerzo)[cite: 71].
-* [cite_start]**Fase de Desarrollo / Codificación:** 48 horas (52.2% del esfuerzo)[cite: 71].
-* [cite_start]**Fase de Testing y QA Técnico:** 20 hours (21.7% del esfuerzo)[cite: 71].
-* [cite_start]**Fase de Documentación Técnica:** 16 horas (17.4% del esfuerzo)[cite: 72].
+* **Fase de Planificación Detallada:** 8 horas (8.7% del esfuerzo).
+* **Fase de Desarrollo / Codificación:** 48 horas (52.2% del esfuerzo).
+* **Fase de Testing y QA Técnico:** 20 horas (21.7% del esfuerzo).
+* **Fase de Documentación Técnica:** 16 horas (17.4% del esfuerzo).
