@@ -1,6 +1,5 @@
 /**
  * Modelo de datos de un producto del catalogo.
- * Sigue la misma estructura que usa el equipo (DummyJSON):
  * id, title, description, price, discountPercentage, rating, stock,
  * brand, category, thumbnail e images.
  */
