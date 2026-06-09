@@ -24,7 +24,7 @@ de detalle.
 - **Angular 18** (componentes *standalone*)
 - **TypeScript**
 - Datos simulados con un **archivo JSON local** (`src/assets/products.json`),
-  con la misma estructura de producto que usa el equipo (DummyJSON):
+  con la estructura de producto (DummyJSON):
   `id, title, description, price, discountPercentage, rating, stock, brand, category, thumbnail, images`.
 
 ## Cómo ejecutarlo
