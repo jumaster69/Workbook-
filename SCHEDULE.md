@@ -120,5 +120,3 @@ Para dar cumplimiento estricto al marco metodológico TSPi, los roles operativos
 * **HITO-04 (30/06/2026):** TSPi Workbook completamente consolidado en Markdown, sin discrepancias matemáticas y aprobado para la presentación final ante el cliente académico.
 
 ---
-**Métrica de Calidad del Cronograma**: 100% consistente con las pestañas de Gobernanza TSP (`SUMS`, `TASK` y `LOGT`).  
-**Estado del Cronograma**: Línea base formalmente fijada, auditada y lista para informe PDF de Entrega 2.
