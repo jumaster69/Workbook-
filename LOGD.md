@@ -8,6 +8,7 @@
 - Jennifer Viviana Samper Torbello
 - Juan Angel Torres Florez
 - Jorge Torres
+-  Daniel Torres
 
 ---
 
