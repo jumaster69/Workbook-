@@ -3,12 +3,12 @@
 **Proyecto Politécnico Gran Colombiano**
 
 ## Integrantes del Equipo
-- Carolina Sotelo Huertas
-- Brayan
-- Jennifer Viviana Samper Torbello
-- Juan Angel Torres Florez
-- Jorge Torres
-- Daniel Torres
+* **Líder de Proyecto (*Project Manager*):** Juan Angel Torres Florez
+* **Gestor de Planificación y Tiempos (*Planning Manager*):** Jorge David Torres Muñoz
+* **Gestora de Calidad y Defectos (*Quality Manager*):** Diana Carolina Sotelo Huertas
+* **Gestora de Procesos y Configuración (*Process Manager*):** Jenifer Viviana Samper Torbello
+* **Gestor de Soporte y Pruebas (*Test Manager*):** Daniel Torres Valenzuela
+* **Ingeniero de Desarrollo (*Software Developer Core*):** Brayan Antonio Torres
 
 ---
 
