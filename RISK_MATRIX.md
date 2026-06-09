@@ -1,221 +1,55 @@
-# Matriz de Riesgos LOGD
+# RISK_MATRIX - Matriz de Riesgos y Planes de Contingencia (Entrega 2)
 
-**Proyecto Politécnico Gran Colombiano**
+**Proyecto**: Workbook - Integración de APIs (DummyJSON & FakeStore)  
+**Metodología**: Team Software Process (TSP)  
+**Gestor de Pruebas y Riesgos (*Test Manager*)**: Daniel Torres Valenzuela  
+**Gestor de Planificación y Tiempos (*Planning Manager*)**: Jorge David Torres Muñoz  
 
-## Integrantes del Equipo
-- Carolina Sotelo Huertas
-- Brayan
-- Jennifer Viviana Samper Torbello
-- Juan Angel Torres Florez
-- Jorge Torres
-- Daniel Torres
+Este artefacto metodológico tiene como propósito identificar, cuantificar y mitigar proactivamente los riesgos técnicos, operativos y de calidad que puedan afectar el desarrollo incremental del catálogo virtual. El control estadístico y seguimiento de los indicadores de riesgo está bajo la gobernanza del *Test Manager* en sincronía con el plan de calidad.
 
 ---
 
-## Matriz de Riesgos
+## 1. Escala Homologada de Evaluación (Criterios TSP)
 
-### Escala de Evaluación
+La prioridad de cada riesgo se calcula mediante el algoritmo estándar de exposición:  
+$$\text{Prioridad} = \text{Probabilidad} \times \text{Impacto}$$
 
-**Probabilidad:**
-- Baja: 1-2
-- Media: 3-4
-- Alta: 5
-
-**Impacto:**
-- Bajo: 1-2
-- Medio: 3-4
-- Alto: 5
-
-**Prioridad = Probabilidad × Impacto**
+* **Probabilidad:** Baja (1-2) | Media (3-4) | Alta (5)
+* **Impacto:** Bajo (1-2) | Medio (3-4) | Alto (5)
+* **Zonas de Acción:** * `Prioridad >= 12`: **Crítico** (Mitigación inmediata y revisión semanal)
+  * `Prioridad 6-11`: **Moderado** (Monitoreo quincenal)
+  * `Prioridad <= 5`: **Bajo** (Aceptación pasiva)
 
 ---
 
-## Riesgos Identificados
+## 2. Matriz Analítica de Riesgos Colectivos (Balanceada al 16.6%)
 
-| ID | Riesgo | Descripción | Probabilidad | Impacto | Prioridad | Estado | Responsable | Mitigación |
-|---|--------|-------------|--------------|---------|-----------|--------|------------|-----------|
-| RG-001 | Fallo en conectividad con API | Las APIs (DummyJSON, FakeStore) pueden no estar disponibles o responder lentamente | 2 | 4 | 8 | Activo | Juan Angel Torres Florez | Implementar reintentos exponenciales, caché de datos, monitoreo de disponibilidad |
-| RG-002 | Cambios en estructura de APIs | Las APIs públicas pueden cambiar su estructura de respuesta sin previo aviso | 2 | 5 | 10 | Activo | Jennifer Viviana Samper Torbello | Documentar versiones de API, validación de esquemas, testing continuo |
-| RG-003 | Desfase en cronograma | Retrasos en el desarrollo por complejidad o cambios de requisitos | 3 | 4 | 12 | Activo | Juan Angel Torres Florez | Revisiones semanales, ajuste dinámico de tareas, comunicación clara |
-| RG-004 | Falta de sincronización del equipo | Conflictos en Git, duplicación de trabajo o cambios conflictivos | 2 | 3 | 6 | Mitigado | Brayan | Establecer ramas por feature, code reviews, reuniones diarias |
-| RG-005 | Errores en manejo de datos | Transformación incorrecta de datos entre APIs | 3 | 4 | 12 | Activo | Carolina Sotelo Huertas | Testing unitario riguroso, validación de datos, casos de prueba |
-| RG-006 | Problemas de rendimiento | Aplicación lenta por consultas ineficientes o falta de caché | 2 | 3 | 6 | Activo | Brayan | Optimización de consultas, implementar paginación, caché estratégico |
-| RG-007 | Falta de documentación | Código poco documentado dificulta mantenimiento futuro | 1 | 3 | 3 | Mitigado | Jennifer Viviana Samper Torbello | Generar documentación continua, comentarios en código |
-| RG-008 | Seguridad de datos | Exposición de credenciales o manejo inseguro de datos | 2 | 5 | 10 | Activo | Jorge Torres | Usar variables de entorno, validación de inputs, HTTPS |
-| RG-009 | Falta de testing | Código sin pruebas puede fallar en producción | 3 | 4 | 12 | Activo | Daniel Torres | Implementar testing unitario, integración, automatizado |
-| RG-010 | Incompatibilidad de versiones | Conflictos entre versiones de dependencias (Node.js, Axios, etc.) | 2 | 3 | 6 | Activo | Brayan | Usar lock files, especificar versiones exactas, testing en CI/CD |
-| RG-011 | Comunicación inefectiva | Falta de claridad en requisitos o tareas entre el equipo | 2 | 4 | 8 | Mitigado | Juan Angel Torres Florez | Reuniones semanales, documentación clara, Slack/Discord |
-| RG-012 | Límites de API | Restricciones de rate limiting pueden bloquear consultas | 1 | 3 | 3 | Activo | Carolina Sotelo Huertas | Implementar throttling, distribuir requests, respetar límites |
+| ID Riesgo | Descripción del Riesgo Técnico u Operativo | Prob (1-5) | Imp (1-5) | Prioridad | Estado | Tarea TASK Asociada | Ingeniero Responsable (Rol PDF) | Estrategia de Mitigación y Plan de Contingencia |
+| :--- | :--- | :---: | :---: | :---: | :---: | :--- | :--- | :--- |
+| **RG-01** | **Fallo de disponibilidad en APIs externas**<br>Interrupción del servicio de DummyJSON o FakeStore durante el desarrollo. | 2 | 4 | **8** | Activo | TSK2-03.4<br>TSK2-04.4 | **Jenifer Viviana Samper**<br>(*Process Manager*) | **Mitigación:** Diseñar una capa de abstracción con datos estáticos (*Mocking JSON*).<br>**Contingencia:** Interceptar los códigos de error HTTP de red y activar el caché local temporizado de contingencia automáticamente. |
+| **RG-02** | **Cambios en los esquemas de respuesta**<br>Modificación imprevista en las propiedades JSON de los productos de las APIs públicas. | 2 | 5 | **10** | Activo | TSK2-03.2<br>TSK2-04.1 | **Jenifer Viviana Samper**<br>(*Process Manager*) | **Mitigación:** Mapeo estricto de tipos de datos en la capa del servicio.<br>**Contingencia:** Daniel Torres ejecutará aserciones estructurales automáticas en Vitest para congelar la integración ante desajustes de esquemas. |
+| **RG-03** | **Desfase del cronograma en minutos netos**<br>Subestimación de las horas requeridas en las fases de codificación y desarrollo. | 3 | 4 | **12** | Crítico | TSK1-05<br>TSK5-02 | **Jorge David Torres**<br>(*Planning Manager*) | **Mitigación:** Planificación granular de tareas menores a 4 horas en la hoja TASK.<br>**Contingencia:** Alerta temprana si el balance de esfuerzo en la pestaña SUMS se desvía del 16.6% individual; reasignación inmediata de tareas pendientes. |
+| **RG-04** | **Baja cobertura en las pruebas de software**<br>No alcanzar la meta del 80% de cobertura en líneas de código para la Entrega 2. | 2 | 4 | **8** | Activo | TSK4-02<br>TSK4-05 | **Daniel Torres Valenzuela**<br>(*Test Manager*) | **Mitigación:** Escritura de archivos `.spec.ts` en paralelo a la creación de funciones asíncronas.<br>**Contingencia:** Restringir los Pull Requests en GitHub si el reporte automatizado de Vitest no cumple la cuota de calidad. |
+| **RG-05** | **Conflictos densos en el repositorio remoto**<br>Pérdida de código o fallas de fusión (*Merge Conflicts*) al trabajar en GitHub Web. | 2 | 4 | **8** | Activo | TSK1-01<br>TSK3-01 | **Juan Angel Torres Florez**<br>(*Project Manager*) | **Mitigación:** Implementación rigurosa del modelo Gitflow utilizando ramas por componente técnico e IDs claros.<br>**Contingencia:** Bloqueo de fusiones directas a `main`; auditoría obligatoria de la rama de desarrollo por el líder antes del merge. |
+| **RG-06** | **Densidad elevada de defectos en la entrega**<br>Inyección masiva de errores de lógica o de tipado detectados de forma tardía. | 2 | 4 | **8** | Activo | TSK4-06<br>TSK4-07 | **Diana Carolina Sotelo**<br>(*Quality Manager*) | **Mitigación:** Ejecutar inspecciones de código cruzadas (*Code Reviews*) en lotes pequeños antes de integrar.<br>**Contingencia:** Registro obligatorio en el LOGD y aislamiento inmediato del componente defectuoso para su refactorización. |
+| **RG-07** | **Inconsistencia métrica en el Workbook**<br>Discrepancias entre los minutos del LOGT, el cronograma SCHEDULE y el informe PDF. | 2 | 5 | **10** | Activo | TSK5-01<br>TSK5-02 | **Jorge David Torres**<br>(*Planning Manager*) | **Mitigación:** Auditoría matemática semanal de los logs de tiempo individuales devengados.<br>**Contingencia:** Ajuste inmediato de la línea base operativa y normalización manual de las tablas cruzadas del repositorio. |
+| **RG-08** | **Desbalance en las cargas operativas**<br>Retraso por acumulación excesiva de horas en un solo integrante (Riesgo corregido). | 1 | 5 | **5** | Mitigado| TSK1-05 | **Brayan Antonio Torres**<br>(*Software Developer*) | **Mitigación:** Reestructuración inicial del Workbook fijando el 16.6% de esfuerzo equitativo (15.3 horas netas por ingeniero).<br>**Contingencia:** Traspaso inmediato de tareas documentales al Process Manager si se superan las horas de código. |
 
 ---
 
-## Matriz de Riesgo Priorizado
+## 3. Protocolos de Monitoreo y Escalación de Contingencias
 
-### Riesgos Críticos (Prioridad > 10)
+Para asegurar que las estrategias de mitigación se ejecuten de manera disciplinada, el subgrupo define los siguientes tres niveles operativos de gobernanza:
 
-1. **RG-002**: Cambios en estructura de APIs - Prioridad 10
-   - Responsable: Jennifer Viviana Samper Torbello
-   - Plan: Validar esquemas de respuesta, mantener tests de integración
+### A. Frecuencia de Auditoría Analítica
+* **Riesgos Críticos (Prioridad >= 12):** Evaluados semanalmente durante las reuniones de sincronización por el *Planning Manager* (Jorge David) para revisar desviaciones en las horas del `LOGT`.
+* **Riesgos Moderados y Bajos (Prioridad < 12):** Monitoreados de forma quincenal por el *Test Manager* (Daniel Torres) mediante la ejecución física de las suites de pruebas y la bitácora del `LOGD`.
 
-2. **RG-003**: Desfase en cronograma - Prioridad 12
-   - Responsable: Juan Angel Torres Florez
-   - Plan: Sprint planning, daily standups, ajustes dinámicos
-
-3. **RG-005**: Errores en manejo de datos - Prioridad 12
-   - Responsable: Carolina Sotelo Huertas
-   - Plan: Suite de tests, validación robusta, casos edge
-
-4. **RG-008**: Seguridad de datos - Prioridad 10
-   - Responsable: Jorge Torres
-   - Plan: Code review de seguridad, secretos en .env
-
-5. **RG-009**: Falta de testing - Prioridad 12
-   - Responsable: Daniel Torres
-   - Plan: Coverage > 80%, tests antes de merge
+### B. Mecanismo Formal de Escalación ante Materialización
+Si un indicador técnico del software falla o un riesgo se activa formalmente en el repositorio:
+1. **Notificación:** El ingeniero que detecta la anomalía abre un *Issue* en GitHub Web en un plazo máximo de 30 minutos y etiqueta al responsable directo del riesgo.
+2. **Activación:** El responsable activa el Plan de Contingencia descrito en la sección 2 (por ejemplo, el uso de datos simulados o el aislamiento de ramas).
+3. **Registro:** El *Quality Manager* (Diana Carolina) documenta la inyección y el tiempo neto de remoción del error de forma obligatoria en la pestaña `LOGD.md` para no alterar el control estadístico de calidad de la Entrega 2.
 
 ---
-
-## Matriz de Riesgo Medios (Prioridad 6-8)
-
-| ID | Riesgo | Probabilidad | Impacto | Prioridad | Mitiga por |
-|---|--------|--------------|---------|-----------|-----------|
-| RG-001 | Fallo en conectividad | 2 | 4 | 8 | Reintentos, caché |
-| RG-004 | Falta de sincronización | 2 | 3 | 6 | Git workflow, reviews |
-| RG-006 | Problemas de rendimiento | 2 | 3 | 6 | Optimización, paginación |
-| RG-010 | Incompatibilidad de versiones | 2 | 3 | 6 | Lock files, testing |
-| RG-011 | Comunicación inefectiva | 2 | 4 | 8 | Reuniones, documentación |
-
----
-
-## Matriz de Riesgo Bajos (Prioridad < 6)
-
-| ID | Riesgo | Probabilidad | Impacto | Prioridad | Mitiga por |
-|---|--------|--------------|---------|-----------|-----------|
-| RG-007 | Falta de documentación | 1 | 3 | 3 | Docs continuas |
-| RG-012 | Límites de API | 1 | 3 | 3 | Throttling, respetar límites |
-
----
-
-## Plan de Respuesta por Riesgo
-
-### RG-003 - Desfase en Cronograma (CRÍTICO)
-
-**Estrategia**: Monitoreo Activo
-
-**Acciones**:
-- Sprint semanal de 20 horas por participante
-- Daily standup de 15 minutos
-- Replanificación el viernes
-- Buffer de 2 horas por semana
-- Asignado a: Juan Angel Torres Florez
-
----
-
-### RG-005 - Errores en Manejo de Datos (CRÍTICO)
-
-**Estrategia**: Prevención
-
-**Acciones**:
-- Escribir tests antes de código (TDD)
-- Validar datos con esquemas JSON
-- Testing de casos edge (valores nulos, vacíos)
-- Code review de Carolina y Jorge
-- Asignado a: Carolina Sotelo Huertas
-
----
-
-### RG-009 - Falta de Testing (CRÍTICO)
-
-**Estrategia**: Prevención
-
-**Acciones**:
-- Coverage mínimo 80%
-- Tests unitarios para funciones críticas
-- Tests de integración para APIs
-- CI/CD con GitHub Actions
-- Asignado a: Daniel Torres
-
----
-
-### RG-002 - Cambios en APIs (CRÍTICO)
-
-**Estrategia**: Mitigación
-
-**Acciones**:
-- Versionamiento de respuestas
-- Tests que validen estructura
-- Monitoreo de cambios en documentación
-- Comunicación con equipo si hay cambios
-- Asignado a: Jennifer Viviana Samper Torbello
-
----
-
-### RG-008 - Seguridad de Datos (CRÍTICO)
-
-**Estrategia**: Prevención
-
-**Acciones**:
-- Nunca commitear credenciales
-- Usar .env para configuración sensible
-- .gitignore debe incluir .env
-- Validar y sanitizar inputs
-- Revisar código antes de merge
-- Asignado a: Jorge Torres
-
----
-
-## Monitoreo y Seguimiento
-
-### Frecuencia de Revisión
-- Semanal: Riesgos críticos (prioridad > 10)
-- Quincenal: Riesgos medios (prioridad 6-10)
-- Mensual: Riesgos bajos (prioridad < 6)
-
-### Responsable del Seguimiento
-Juan Angel Torres Florez (Líder del Proyecto)
-
-### Mecanismo de Escalación
-Si un riesgo se materializa:
-1. Notificar al responsable del riesgo
-2. Activar plan de contingencia
-3. Comunicar al equipo en 30 minutos
-4. Documentar incidente en LOGD.md
-
----
-
-## Matriz de Dependencias de Riesgos
-
-```
-RG-003 (Cronograma) ← RG-005 (Datos) y RG-009 (Testing)
-RG-002 (APIs) → RG-001 (Conectividad) y RG-006 (Rendimiento)
-RG-008 (Seguridad) ← RG-011 (Comunicación)
-```
-
----
-
-## Recursos y Presupuesto de Mitigación
-
-| Riesgo | Recurso Necesario | Tiempo | Responsable |
-|--------|------------------|--------|-----------|
-| RG-001 | Implementar retry logic | 2 horas | Brayan |
-| RG-002 | Crear tests de integración | 4 horas | Jennifer |
-| RG-003 | Setup de sprint planning | 1 hora | Juan Angel |
-| RG-005 | Suite de tests | 6 horas | Carolina |
-| RG-008 | Auditoría de seguridad | 2 horas | Jorge |
-| RG-009 | Coverage tracking | 3 horas | Daniel |
-
----
-
-## Lecciones Aprendidas (Iterativo)
-
-Este documento será actualizado conforme:
-- Se materialicen riesgos
-- Se completen fases del proyecto
-- Surjan nuevos riesgos identificados
-- Se mejoren las estrategias de mitigación
-
----
-
-**Última actualización**: 09/06/2026 18:00
-**Próxima revisión**: 16/06/2026
-**Responsable**: Juan Angel Torres Florez
+**Aprobado para su Despliegue**: Daniel Torres Valenzuela (*Test Manager*) & Jorge David Torres Muñoz (*Planning Manager*).
