@@ -600,6 +600,83 @@ module.exports = {
 
 ---
 
+## 🧪 Aseguramiento de Calidad y Pruebas Automatizadas (Fase 4)
+
+**Responsable:** Daniel Torres Valenzuela – Test Manager  
+**Tareas asociadas:** TSK4-01 · TSK4-02 · TSK4-03 · TSK4-04 · TSK4-05
+
+### Objetivo
+
+Durante la Fase 4 se implementó y ejecutó la estrategia de pruebas unitarias del proyecto utilizando **Vitest (v4.1.7)** como framework de pruebas automatizadas, integrado con Angular mediante `ng test`. El propósito fue verificar el correcto funcionamiento de los servicios y componentes críticos de la aplicación antes de la entrega final.
+
+---
+
+### Actividades Realizadas
+
+**TSK4-01 – Configuración del entorno de pruebas automatizadas**  
+Se configuró Vitest en el proyecto Angular, validando la integración con `ng test` y asegurando que el entorno de pruebas pudiera ejecutar suites de forma automatizada. La configuración quedó operativa sobre el bundle de aplicación (`spec-app-app.js`, `spec-app-search-search.service.js`), con un tamaño total inicial de **58.63 kB** y un tiempo de compilación de 2.683 segundos.
+
+**TSK4-02 – Suite de pruebas: DummyJSON API**  
+Se desarrolló la suite de pruebas unitarias para el servicio de búsqueda de productos (`search.service.spec.ts`), cubriendo los módulos `getAllProducts`, `getProductsByCategory`, `searchProducts`, `getProductDetails` y `getUsers`. Se validó la estructura de respuesta, los tipos de datos, el manejo de categorías inexistentes y la correcta recuperación de recursos por ID.
+
+**TSK4-03 – Suite de pruebas: FakeStore API**  
+Se desarrolló la suite de pruebas para los módulos de integración con FakeStore API (`api.spec.ts`), cubriendo `getFakeStoreProducts`, `getFakeStoreByCategory` y `getUserCart`. Se verificó la estructura de los objetos de respuesta, los tipos de dato del modelo de producto y la consistencia de los filtros por categoría.
+
+**TSK4-04 – Validación de límites y manejo de excepciones**  
+Se incluyeron suites específicas para condiciones de borde: manejo de *timeouts* con `ECONNABORTED`, respuesta ante endpoints inválidos (HTTP ≥ 400), búsquedas sin resultados y productos o categorías inexistentes. Ningún caso de borde produjo fallos no controlados en la ejecución final.
+
+**TSK4-05 – Reporte de ejecución y cobertura**  
+Se ejecutó la suite completa y se documentó el resultado. El reporte de cobertura fue generado como evidencia del proceso de validación de la Fase 4.
+
+---
+
+### Resultados de Ejecución
+
+| Archivo de Prueba | Casos Ejecutados | Resultado | Duración |
+|---|---|---|---|
+| `src/app/search/search.service.spec.ts` | 11 | ✅ PASS | 67 ms |
+| `src/app/app.spec.ts` | 2 | ✅ PASS | 142 ms |
+| **TOTAL** | **13** | **✅ PASS** | **2.26 s** |
+
+- **Test Files:** 2 passed (2)
+- **Tests:** 13 passed (13)
+- **Inicio de ejecución:** 17:22:34 — 08/06/2026
+- **Duración total:** 2.26 s (transform 345ms · setup 1.06s · import 336ms · tests 210ms · environment 2.23s)
+- **Framework:** Vitest v4.1.7 integrado con Angular (`ng test`)
+
+---
+
+### Cobertura de Casos por Suite
+
+| Suite | Módulo Validado | Casos |
+|---|---|---|
+| DummyJSON — getAllProducts | Obtención de lista, estructura y total | 3 |
+| DummyJSON — getProductsByCategory | Filtrado por categoría, manejo de inexistentes | 4 |
+| DummyJSON — searchProducts | Búsqueda por keyword, resultado vacío | 3 |
+| DummyJSON — getProductDetails | Campos completos, producto inexistente | 2 |
+| DummyJSON — getUsers | Lista de usuarios, estructura, usuario por ID | 3 |
+| FakeStore — getFakeStoreProducts | Lista, estructura, tipos de datos | 3 |
+| FakeStore — getFakeStoreByCategory | Filtro por categoría, categorías disponibles | 3 |
+| FakeStore — getUserCart | Carrito por ID, items, lista completa | 3 |
+| Validación de Errores | Timeout ECONNABORTED, endpoint inválido | 2 |
+| Rendimiento | Tiempo de respuesta DummyJSON y FakeStore < 3s | 2 |
+
+---
+
+### Defecto Detectado y Resuelto (Trazabilidad con LOGD)
+
+Durante la ejecución de las pruebas se identificó el defecto **DEF-07** (registrado en LOGD.md): falla en las aserciones de la suite Vitest por desfase de milisegundos en la latencia emulada de red. Se resolvió configurando un *fake timer*, permitiendo que todas las aserciones finalizaran correctamente. Tiempo de fijación: 25 minutos.
+
+---
+
+### Conclusión
+
+La ejecución de las **13 pruebas unitarias** distribuidas en **2 archivos de prueba** finalizó satisfactoriamente, sin fallos críticos en la rama de integración. Las suites desarrolladas proporcionan trazabilidad entre las tareas de aseguramiento de calidad (TSK4-01 a TSK4-05) y la validación real de los servicios de integración de APIs del proyecto, cumpliendo con los objetivos de calidad definidos bajo la metodología TSPi.
+
+**Auditoría de Pruebas:** Daniel Torres Valenzuela (Test Manager) · Junio 2026
+
+---
+
 ## 🎓 Conclusión
 
 Este workbook proporciona una base sólida para integrar APIs externas en tus proyectos. Practica con los ejemplos y adapta el código a tus necesidades específicas.
@@ -609,4 +686,5 @@ Este workbook proporciona una base sólida para integrar APIs externas en tus pr
 ---
 
 **Última actualización**: Junio 2026  
-**Equipo**: Carolina, Brayan, Jennifer Viviana Samper Torbello, Juan Angel Torres Florez, Jorge Torres
+**Equipo**: Carolina, Brayan, Jennifer Viviana Samper Torbello, Juan Angel Torres Florez, Jorge Torres, Daniel Torres Valenzuela
+
